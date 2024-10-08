@@ -1,0 +1,176 @@
+#works {
+    margin: 0 auto;
+
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+
+}
+.worksDescription {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.worksSnapshots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    width: 50rem;
+
+    flex-wrap:wrap;
+   
+}
+.worksImg {
+    object-fit: scale-down;
+    height: 15rem;
+    width: 15rem;
+    margin-right: 2rem;
+    text-align: left;
+
+}
+.worksBtn {
+    padding: 0.5rem 2.5rem;
+
+    border-radius: 2rem;
+
+
+    font-size: 1rem;
+    margin: 3rem 0;
+}
+
+@media screen and (max-width:580px) {
+    .worksImg {
+        height:50vw;
+    }
+}
+.project-card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    width: 80vw; /* Use relative units for responsive width */
+    max-width: 15vw; /* Set a max-width to avoid overly large cards */
+    height: 100px;
+    border: 2px solid transparent;
+
+    padding: 16px;
+    margin: 16px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    opacity: 0.9;
+    position: relative;
+}
+
+/* Expanded Card State */
+.project-card.expanded {
+
+    height: 325px;
+    transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Card Hover Effects */
+.project-card:hover {
+    border-color: rgb(61, 28, 177);
+    transition: 0.5s;
+}
+
+/* Title inside Card */
+.titleOutsideBox {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+/* Card Content */
+.project-card .card-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between;
+    width: 100%;
+    opacity: 1;
+}
+
+/* Card Details and Image Styling */
+.project-card .card-details,
+.project-card .card-image {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.project-card .card-image img {
+    max-width: 50%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* GitHub Icon Styling */
+.github-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+.github-icon {
+    width: 36px;
+    height: auto;
+}
+
+/* Hover Effect for GitHub Icon */
+.github-icon-container a:hover .github-icon {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        width: 90vw; /* Full width for smaller screens */
+        max-width: 100%; /* Ensure it doesn't exceed screen size */
+
+    }
+
+    .project-card.expanded {
+        max-height: 100vh;
+    }
+
+    .github-icon {
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100vw; /* Full width for mobile */
+        padding: 12px;
+        margin: 0.5rem;
+    }
+
+    .project-card.expanded {
+        height: 400px;
+    }
+
+    .github-icon {
+        width: 28px;
+    }
+}

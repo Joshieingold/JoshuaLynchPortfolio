@@ -1,0 +1,70 @@
+#intro {
+  height: 90vh;
+  width: 80vw;
+  max-width: 100%; /* Ensure full width on smaller screens */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background: rgb(30, 30, 30);
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  height: 100vh;
+  width: auto; /* Ensure the background covers the entire width */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 2.5rem; /* Reduced default font size */
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hello {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: rgb(64 191 208);
+  font-size: 2rem; /* Ensure it scales */
+}
+
+.introPara {
+  font-size: 1rem; /* Ensure it's legible on small screens */
+  font-weight: 300;
+}
+
+.btn {
+  margin: 1rem 0;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem; /* Ensure font size scales down */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */

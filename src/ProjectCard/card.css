@@ -1,0 +1,74 @@
+.project-card {
+    background-color: rgb(30, 30, 30); /* Dark background for cards */
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    cursor: pointer;
+    color: #fff; /* White text for contrast */
+    transition: all 0.5s ease; /* Smooth transitions for all properties */
+    overflow: hidden;
+    max-height: 120px; /* Default collapsed height */
+    opacity: 0.9;
+    position: relative;
+}
+
+    .project-card:hover {
+        border-color: purple; /* Change border color to purple on hover */
+    }
+
+    .project-card.expanded {
+        max-height: 400px; /* Height when expanded */
+        transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
+        transform: scale(1.05); /* Slightly bigger when expanded */
+        opacity: 1;
+    }
+
+    .project-card .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-card .card-details {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .project-card .card-image {
+        flex: 1;
+    }
+
+        .project-card .card-image img {
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+    .project-card a {
+        display: block;
+        margin-top: 8px;
+        color: #fff; /* White text for GitHub link */
+        text-decoration: none;
+    }
+
+        .project-card a:hover {
+            color: #ccc; /* Hover effect for link */
+        }
+
+    .project-card.expanded .card-details,
+    .project-card.expanded .card-image {
+        opacity: 1; /* Ensure content becomes visible */
+        transition: opacity 0.5s ease;
+    }
+
+/* Optional: Smooth appearance of content inside expanded cards */
+.card-content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.project-card.expanded .card-content {
+    opacity: 1;
+}
+
+  

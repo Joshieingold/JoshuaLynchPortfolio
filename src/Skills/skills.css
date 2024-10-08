@@ -1,0 +1,67 @@
+#skills {
+  margin-top: 2rem; /* Keep the margin-top for spacing */
+  min-height: 45vh; /* Use min-height instead of height for better scaling */
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  position: relative; /* Ensure it is positioned properly */
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillBarImg {
+    object-fit: scale-down;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+.skillDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 70rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 80vw;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column; /* Ensures items are stacked */
+    align-items: center; /* Aligns all content to the left */
+    text-align: left; /* Ensures text is left-aligned */
+}
+
+.skillBar {
+    display: flex;
+    justify-content: flex-start; /* Ensures content stays on the left */
+    align-items: center; /* Vertically centers content */
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(30, 30, 30);
+    width: 100%; /* Make each bar take the full width */
+}
+
+.skillBarText > p {
+    font-size: 1rem;
+    text-align: left; /* Ensures text inside p tags is left-aligned */
+    color: grey;
+}
+
+.skillBarImg {
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,82 @@
+#contact {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 80vw;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.contactHeading {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.ContactDescription {
+    margin: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+    align-items: center;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 100%;
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40,40,40);
+}
+.message {
+    font-size: large;
+}
+.submitBtn {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+}
+.submitBtn:hover {
+  border-color: #646cff;
+}
+
+.emailSuccessMessage {
+  color: #28a745;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #242424;
+  opacity: 0; /* Start hidden */
+  transform: translateY(-10px); /* Move it up initially */
+  transition: opacity 0.5s ease, transform 2.5s ease; /* Smooth fade and slide-in */
+}
+
+.emailSuccessMessage.show {
+  opacity: 1; /* Make it fully visible */
+  transform: translateY(0); /* Move it to its original position */
+}

@@ -1,0 +1,33 @@
+.svg-scroller {
+    width: 100px; /* Define a square size for the container */
+    height: 100px;
+    overflow: hidden; /* Hide overflow for continuous scrolling */
+    position: relative;
+    margin-right: 1rem;
+}
+
+.svg-container {
+    display: flex;
+    animation: scroll-left 30s linear infinite; /* Slower scroll */
+    /* Adjust the width to be twice the amount of SVGs for seamless scrolling */
+    width: calc(200px * 6); /* 6 icons, adjusted based on your SVG size and margin */
+
+}
+
+/* SVG icon styling */
+.svg-icon {
+    width: 100px; /* Size of the icons */
+    height: 100px;
+    margin: 0 10px; /* Space between icons */
+}
+
+/* Scroll to the left */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%); /* Move half of the container width */
+    }
+}
