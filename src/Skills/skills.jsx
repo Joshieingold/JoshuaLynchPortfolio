@@ -1,13 +1,13 @@
 import React from "react";
-import "./skills.css";
 import gui from "../assets/GUI.png";
-import ps from "../assets/ProblemSolving.png"
+import ps from "../assets/ProblemSolving.png";
 import IconScroll from "../IconScroll/iconscroll";
+import "./skills.css";
 const Skills = () => {
     return (
         <section id="skills">
             <span className="skillTitle">What I do </span>
-            <span className="skillDescription">I specialize in crafting innovative and reliable solutions across a broad spectrum of technologies. With a strong foundation in front-end and full-stack development, I build responsive, user-centric applications that prioritize both functionality and design. My approach is rooted in problem-solving, ensuring that each challenge is met with an efficient and effective solution. Whether working independently or collaborating within a team, I deliver high-quality results that drive projects forward.</span>
+            <span className="skillDescription">I create innovative, reliable solutions across various technologies, specializing in front-end and full-stack development. With a focus on responsive, user-centric applications, I prioritize both functionality and design. My problem-solving approach ensures efficient, effective solutions, whether working independently or in a team, driving projects to success.</span>
             <div className="skillBars">
                 <div className="skillBar">
                     <img src={gui} alt="" className="skillBarImg"></img>

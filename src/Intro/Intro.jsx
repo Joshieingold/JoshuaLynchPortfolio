@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
+import bg from "../assets/JoshImage.png";
 import Network from "../Network/network.jsx";
 import "./intro.css";
-import bg from "../assets/JoshImage.png";
 
 const Intro = () => {
     return (

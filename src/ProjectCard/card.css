@@ -18,7 +18,7 @@
     }
 
     .project-card.expanded {
-        max-height: 400px; /* Height when expanded */
+        max-height: fit-content;/* Height when expanded */
         transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
         transform: scale(1.05); /* Slightly bigger when expanded */
         opacity: 1;

@@ -1,25 +1,21 @@
-/* Ensure body takes full width and height */
+/* General body and navbar styling */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;  /* Ensure the body spans full width */
-  overflow-x: hidden; /* Prevent overflow */
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-/* Navbar styling */
 .navbar {
   height: 4vh;
-  width: 80vw;
-  max-width: 100vw;   /* Make sure it doesn't exceed viewport */
+  width: 90vw;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 1rem;
-
-  
-
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between the elements */
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -27,16 +23,15 @@ body {
   border-radius: 0.5rem;
 }
 
-/* Ensure the logo button and menu items align properly */
 .logoButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;  /* Remove default background */
-  border: none;      /* Remove border */
-  padding: 0;        /* Remove padding */
-  cursor: pointer;   /* Change cursor to pointer */
-  outline: none;     /* Remove outline on focus */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none; /* Remove outline on focus */
   width: 50px;
 }
 
@@ -50,14 +45,121 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Add spacing between the items */
+  gap: 2rem;
+  cursor: pointer;
 }
 
-/* Ensure the button is aligned properly on the right side */
 .desktopMenuBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  color: black;
+}
+
+.desktopMenuListItem {
+  color: white;
+}
+
+.desktopMenuListItem:hover {
+  color: #646cff;
+  transition: 0.5s;
+}
+
+/* Mobile-specific styles */
+.hamburger-icon {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: rgba(255, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+  outline: none; /* Remove outline */
+  box-shadow: none;
+}
+.hamburger-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* Mobile menu animation */
+/* Hide "Home" from mobile menu on larger screens */
+.mobile-menu {
+  display: none; /* Initially hidden */
+  background: 0;
+}
+.mobileMenuItem {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.mobileMenuItem:hover {
+  color: white;
+  border-color: #646cff;
+}
+/* Mobile-specific styles */
+.mobileMenuBtn {
+  width: 59%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-menu, .desktopMenuBtn {
+    display: none; /* Hide desktop menu on small screens */
+  }
+
+  .hamburger-icon {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #242424;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    opacity: 0;
+  }
+
+  .mobile-menu.open {
+    max-height: 300px; /* Open state for sliding down */
+    opacity: 1;
+  }
+  .mobileMenuItem {
+    color: white;
+  }
+}
+
+/* Hide "Home" from desktop menu on mobile */
+@media screen and (min-width: 769px) {
+  .mobile-menu {
+    display: none; /* Hide mobile menu on larger screens */
+  }
 }
