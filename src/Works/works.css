@@ -63,8 +63,8 @@
     align-items: center;
     background-color: rgb(30, 30, 30);
     border-radius: 8px;
-    width: 10vw; /* Default width for larger screens */
-    max-width: 20vw; /* Set a max-width for larger screens */
+    width: 10vw; 
+    max-width: 20vw; 
     height: 100px;
     padding: 16px;
     margin: 16px;
@@ -75,7 +75,7 @@
     opacity: 0.9;
 }
 
-/* Expanded Card State */
+
 .project-card.expanded {
     height: 20vw;
     transform: scale(1.05);
@@ -83,29 +83,29 @@
     opacity: 1;
 }
 
-/* Card Hover Effects */
+
 .project-card:hover {
     border-color: rgb(61, 28, 177);
     transition: 0.5s;
 }
 
-/* Title inside Card */
+
 .titleOutsideBox {
     text-align: center;
     width: 100%;
     margin: 0;
 }
 
-/* Card Content */
+
 .project-card .card-content {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     opacity: 1;
 }
 
-/* Card Details and Image Styling */
+
 .project-card .card-details,
 .project-card .card-image {
     opacity: 1;
@@ -113,12 +113,12 @@
 }
 
 .project-card .card-image img {
-    max-width: 50%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 50%;
+    height: auto;
     border-radius: 8px;
 }
 
-/* GitHub Icon Styling */
+
 .github-icon-container {
     display: flex;
     justify-content: center;
@@ -131,13 +131,13 @@
     height: auto;
 }
 
-/* Hover Effect for GitHub Icon */
+
 .github-icon-container a:hover .github-icon {
     opacity: 0.5;
     transition: 0.3s;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width:1500px) {
     .card-details {
         font-size: 75%;
@@ -159,12 +159,12 @@
 
 @media (max-width: 768px) {
     .project-card {
-        width: 80vw; /* Adjust width to take up more space on mobile */
-        max-width: 100%; /* Ensure it uses the full width */
+        width: 80vw; 
+        max-width: 100%; 
     }
 
     .project-card.expanded {
-        height: 100vh; /* Ensure card expands fully on mobile */
+        height: 100vh; 
         max-width: 100%;
     }
 
@@ -179,7 +179,7 @@
     }
     
     .project-card {
-        width: 90vw; /* Take full width on very small screens */
+        width: 90vw;
         margin: 8px 0;
     }
     .project-card.expanded {

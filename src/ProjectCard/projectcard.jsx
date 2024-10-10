@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, image, githubLink }) => {
 
     const toggleCard = () => {
         setIsExpanded(!isExpanded);
-        // Scroll into view when expanded
+
         if (!isExpanded) {
             setTimeout(() => {
                 document.getElementById(title).scrollIntoView({

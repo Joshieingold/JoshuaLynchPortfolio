@@ -1,4 +1,4 @@
-/* General body and navbar styling */
+
 body {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
-  outline: none; /* Remove outline on focus */
+  outline: none; 
   width: 50px;
 }
 
@@ -64,7 +64,7 @@ body {
   transition: 0.5s;
 }
 
-/* Mobile-specific styles */
+
 .hamburger-icon {
   display: none;
   font-size: 2rem;
@@ -72,17 +72,16 @@ body {
   border: rgba(255, 0, 0, 0);
   color: white;
   cursor: pointer;
-  outline: none; /* Remove outline */
+  outline: none; 
   box-shadow: none;
 }
 .hamburger-icon:focus {
   outline: none;
   box-shadow: none;
 }
-/* Mobile menu animation */
-/* Hide "Home" from mobile menu on larger screens */
+
 .mobile-menu {
-  display: none; /* Initially hidden */
+  display: none; 
   background: 0;
 }
 .mobileMenuItem {
@@ -104,7 +103,7 @@ body {
   color: white;
   border-color: #646cff;
 }
-/* Mobile-specific styles */
+
 .mobileMenuBtn {
   width: 59%;
   display: flex;
@@ -123,11 +122,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .desktop-menu, .desktopMenuBtn {
-    display: none; /* Hide desktop menu on small screens */
+    display: none; 
   }
 
   .hamburger-icon {
-    display: block; /* Show hamburger icon on mobile */
+    display: block; 
   }
 
   .mobile-menu {
@@ -149,7 +148,7 @@ body {
   }
 
   .mobile-menu.open {
-    max-height: 300px; /* Open state for sliding down */
+    max-height: 300px; 
     opacity: 1;
   }
   .mobileMenuItem {
@@ -157,9 +156,9 @@ body {
   }
 }
 
-/* Hide "Home" from desktop menu on mobile */
+
 @media screen and (min-width: 769px) {
   .mobile-menu {
-    display: none; /* Hide mobile menu on larger screens */
+    display: none; 
   }
 }

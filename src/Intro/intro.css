@@ -1,7 +1,7 @@
 #intro {
   height: 90vh;
   width: 80vw;
-  max-width: 100%; /* Ensure full width on smaller screens */
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -16,7 +16,7 @@
   right: 0;
   object-fit: cover;
   height: 100vh;
-  width: auto; /* Ensure the background covers the entire width */
+  width: auto; 
   z-index: 1;
   pointer-events: none;
 }
@@ -25,7 +25,7 @@
   height: 100vh;
   width: 100vw;
   padding: 2rem;
-  font-size: 2.5rem; /* Reduced default font size */
+  font-size: 2.5rem;
   font-weight: 700;
   display: flex;
   flex-direction: column;
@@ -48,11 +48,11 @@ canvas {
 
 .introName {
   color: rgb(64 191 208);
-  font-size: 2rem; /* Ensure it scales */
+  font-size: 2rem; 
 }
 
 .introPara {
-  font-size: 1rem; /* Ensure it's legible on small screens */
+  font-size: 1rem;
   font-weight: 300;
   width: 80%;
   text-wrap: wrap;
@@ -64,7 +64,7 @@ canvas {
   border-radius: 2rem;
   height: 3rem;
   width: 10rem;
-  font-size: 1rem; /* Ensure font size scales down */
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   background-color: rgba(12, 12, 12, 0.89);
@@ -73,7 +73,7 @@ canvas {
   background-color: rgb(12, 12, 12);
   transition: 0.5s;
 }
-/* Media queries for responsiveness */
+
 @media (max-width:1352px) {
   .bg {
     opacity: 0;

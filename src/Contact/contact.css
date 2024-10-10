@@ -72,12 +72,12 @@
   margin: 1rem 0;
   padding: 0.5rem;
   background-color: #242424;
-  opacity: 0; /* Start hidden */
-  transform: translateY(-10px); /* Move it up initially */
-  transition: opacity 0.5s ease, transform 2.5s ease; /* Smooth fade and slide-in */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 2.5s ease;
 }
 
 .emailSuccessMessage.show {
-  opacity: 1; /* Make it fully visible */
-  transform: translateY(0); /* Move it to its original position */
+  opacity: 1; 
+  transform: translateY(0);
 }

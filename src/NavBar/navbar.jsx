@@ -20,7 +20,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="logo" />
       </button>
 
-      {/* Desktop menu */}
+
       <div className="desktop-menu">
         <Link
           to="intro"
@@ -55,14 +55,13 @@ const Navbar = () => {
         Contact Me
       </button>
 
-      {/* Hamburger icon for mobile */}
       <button className="hamburger-icon" onClick={toggleMenu}>
         &#9776;
       </button>
 
-      {/* Mobile menu */}
+
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
-        {/* Close menu when an item is selected */}
+
         <Link
           to="intro"
           smooth={true}

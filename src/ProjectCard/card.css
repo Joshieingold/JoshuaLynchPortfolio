@@ -61,7 +61,7 @@
         transition: opacity 0.5s ease;
     }
 
-/* Optional: Smooth appearance of content inside expanded cards */
+
 .card-content {
     opacity: 0;
     transition: opacity 0.5s ease;

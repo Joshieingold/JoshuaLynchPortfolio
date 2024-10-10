@@ -4,7 +4,7 @@ import "./contact.css";
 
 const Contact = () => {
     const form = useRef();
-    const [emailSent, setEmailSent] = useState(false);  // State to track email sent
+    const [emailSent, setEmailSent] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,15 +15,15 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    setEmailSent(true);  // Set emailSent to true on success
-                    setTimeout(() => setEmailSent(false), 5000);  // Remove message after 5 seconds
+                    setEmailSent(true);
+                    setTimeout(() => setEmailSent(false), 5000);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                 }
             );
 
-        e.target.reset();  // Clear form fields
+        e.target.reset();
     };
 
     return (

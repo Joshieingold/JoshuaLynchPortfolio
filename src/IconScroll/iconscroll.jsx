@@ -1,5 +1,5 @@
 import React from 'react';
-import './iconscroll.css'; // Import the CSS for styling
+import './iconscroll.css';
 
 const IconScroll = () => {
     const svgs = [
@@ -17,10 +17,10 @@ const IconScroll = () => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
 
 
-        // Add more SVGs if needed
+
     ];
 
-    const doubleSvgs = [...svgs, ...svgs]; // Create a larger set for continuous scrolling
+    const doubleSvgs = [...svgs, ...svgs];
 
     return (
         <div className="svg-scroller">

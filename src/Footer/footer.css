@@ -1,6 +1,5 @@
 
 
-/* Footer styling */
 .footer {
     width: 100vw;
     height: 4rem;
@@ -10,6 +9,6 @@
     justify-content: center;
     font-weight: 300;
     font-size: small;
-    position: relative; /* Remove fixed */
+    position: relative;
     left: 0;
 }
