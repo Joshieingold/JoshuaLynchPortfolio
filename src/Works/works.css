@@ -138,6 +138,25 @@
 }
 
 /* Responsive Adjustments */
+@media (max-width:1500px) {
+    .card-details {
+        font-size: 75%;
+    }
+
+}
+@media (max-width:1024px) {
+    .card-details {
+        font-size: 55%;
+    }
+    .project-card {
+        width: 60rem;
+    }
+    .card-title {
+        font-size: 50%;
+    }
+
+}
+
 @media (max-width: 768px) {
     .project-card {
         width: 80vw; /* Adjust width to take up more space on mobile */
@@ -146,6 +165,7 @@
 
     .project-card.expanded {
         height: 100vh; /* Ensure card expands fully on mobile */
+        max-width: 100%;
     }
 
     .github-icon {
@@ -154,9 +174,12 @@
 }
 
 @media (max-width: 480px) {
+    .card-details {
+        font-size: 90%;
+    }
+    
     .project-card {
         width: 90vw; /* Take full width on very small screens */
-        padding: 12px;
         margin: 8px 0;
     }
     .project-card.expanded {

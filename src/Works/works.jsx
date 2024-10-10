@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './works.css'; 
-import Portfolio from "../assets/worksImg.png";
-import WarehouseToolbox from "../assets/ExcelImportTool.png";
-import Chess from "../assets/ChessPngViewer.png";
 import Calc from "../assets/Calculator.png";
+import Chess from "../assets/ChessPngViewer.png";
+import WarehouseToolbox from "../assets/ExcelImportTool.png";
 import TTT from "../assets/TikTacToe.png";
+import './works.css';
 const ProjectCard = ({ title, description, image, githubLink }) => {
     const [expanded, setExpanded] = useState(false);
 
@@ -62,31 +61,19 @@ const Works = () => {
                 />
                 <ProjectCard
                     title="Chess PGN Viewer"
-                    description="This features a working chess board programed with game logic, a PGN generated with the game and options for importing and exporting."
+                    description="A working chess board featuring game logic, a game record, and importing/exporting."
                     image={Chess}
                     githubLink="https://github.com/Joshieingold/Chess-PGN-Viewer"
                 />
                 <ProjectCard
-                    title="Project 3"
-                    description="This is my third project."
-                    image={Portfolio}
-                    githubLink="https://github.com/Joshieingold/Chess-PGN-Viewer"
-                />
-                <ProjectCard
-                    title="Project 3"
-                    description="This is my third project."
-                    image={Portfolio}
-                    githubLink="https://github.com/user/project2"
-                />
-                <ProjectCard
                     title="Tic-Tac-Toe"
-                    description="This is a responsive and fully functioning game of Tic-Tac-Toe built with pure HTML, CSS, and JavaScript."
+                    description="This is a responsive and functioning game of Tic-Tac-Toe built with HTML, CSS, and JavaScript."
                     image={TTT}
                     githubLink="https://github.com/Joshieingold/Small-Projects/tree/main/Tik-Tac-Toe"
                 />
                 <ProjectCard
                     title="Online Calculator"
-                    description="This is a responsive and fully functioning calculator built with pure HTML, CSS, and JavaScript"
+                    description="This is a responsive and fully functioning calculator built with HTML, CSS, and JavaScript"
                     image={Calc}
                     githubLink="https://github.com/Joshieingold/Small-Projects/tree/main/Calculator"
                 />
