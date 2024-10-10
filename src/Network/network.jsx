@@ -25,7 +25,7 @@ const Network = () => {
         // Generate stars proportional to screen size
         const generateStars = () => {
             stars = []; // Reset stars array
-            numStars = Math.floor(canvas.width * canvas.height / 14000); // Adjust the divisor for density
+            numStars = Math.floor(canvas.width * canvas.height / 15000); // Adjust the divisor for density
 
             for (let i = 0; i < numStars; i++) {
                 stars.push({

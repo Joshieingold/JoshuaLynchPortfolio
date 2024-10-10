@@ -1,6 +1,6 @@
 .preloader {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     background: rgb(36, 36, 36);
     color: white;
     position: fixed;
