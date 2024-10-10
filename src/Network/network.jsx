@@ -5,31 +5,41 @@ const Network = () => {
 
     useEffect(() => {
         const canvas = canvasRef.current;
+        const container = document.getElementById('intro'); // Ensure this matches your container ID
+        if (!canvas || !container) return; // Ensure canvas and container exist before proceeding
+
         const ctx = canvas.getContext('2d');
-        const container = document.getElementById('intro'); // Match canvas size to container
 
         // Set canvas dimensions to match the #intro container
         const resizeCanvas = () => {
+            if (!container) return; // If the container doesn't exist, return early
             canvas.width = container.offsetWidth;
             canvas.height = container.offsetHeight;
+            generateStars(); // Regenerate stars on resize
         };
-
-        resizeCanvas(); // Set initial size
 
         let stars = [];
         const FPS = 60;
-        const numStars = 130;
+        let numStars;
 
-        // Initialize stars
-        for (let i = 0; i < numStars; i++) {
-            stars.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                radius: Math.random() * 1 + 1,
-                vx: Math.floor(Math.random() * 50) - 25,
-                vy: Math.floor(Math.random() * 50) - 25
-            });
-        }
+        // Generate stars proportional to screen size
+        const generateStars = () => {
+            stars = []; // Reset stars array
+            numStars = Math.floor(canvas.width * canvas.height / 14000); // Adjust the divisor for density
+
+            for (let i = 0; i < numStars; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * (canvas.width / 500) + 1, // Scale radius with screen width
+                    vx: (Math.random() - 0.5) * 50, // Adjust velocity proportionally
+                    vy: (Math.random() - 0.5) * 50
+                });
+            }
+        };
+
+        // Call the resizeCanvas to set initial size
+        resizeCanvas();
 
         // Function to calculate distance between two points
         const distance = (point1, point2) => {
