@@ -51,7 +51,7 @@ const Works = () => {
     return (
         <section id="works">
             <h2 className="worksTitle">My Portfolio</h2>
-            <span className="worksDescription">I take pride in being able to finish any assignment</span>
+            <span className="worksDescription">Explore a selection of my recent projects showcasing my skills in web development, UI/UX design, and programming. Each project reflects my passion for creating intuitive, responsive, and efficient solutions.</span>
             <div className="worksSnapshots">
                 <ProjectCard
                     title="Warehouse Toolbox"
