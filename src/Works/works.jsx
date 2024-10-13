@@ -3,6 +3,7 @@ import Calc from "../assets/Calculator.png";
 import Chess from "../assets/ChessPngViewer.png";
 import WarehouseToolbox from "../assets/ExcelImportTool.png";
 import TTT from "../assets/TikTacToe.png";
+import Poker from "../assets/poker.png";
 import './works.css';
 const ProjectCard = ({ title, description, image, githubLink }) => {
     const [expanded, setExpanded] = useState(false);
@@ -77,6 +78,13 @@ const Works = () => {
                     image={Calc}
                     githubLink="https://github.com/Joshieingold/Small-Projects/tree/main/Calculator"
                 />
+                <ProjectCard
+                    title="Poker Trainer"
+                    description="Play poker and learn pre-flop ranges with this interactive poker simulator"
+                    image={Poker}
+                    githubLink="https://github.com/Joshieingold/poker-trainer"
+                    />
+                
             </div>
         </section>
     );
