@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Calc from "../assets/Calculator.png";
 import Chess from "../assets/ChessPngViewer.png";
 import WarehouseToolbox from "../assets/ExcelImportTool.png";
-import TTT from "../assets/TikTacToe.png";
 import Poker from "../assets/poker.png";
+import Snake from "../assets/Snake.png";
+import TTT from "../assets/TikTacToe.png";
 import './works.css';
 const ProjectCard = ({ title, description, image, githubLink }) => {
     const [expanded, setExpanded] = useState(false);
@@ -84,7 +85,12 @@ const Works = () => {
                     image={Poker}
                     githubLink="https://github.com/Joshieingold/poker-trainer"
                     />
-                
+                <ProjectCard
+                    title="The Snake Method"
+                    description="The classic game of snake reimagined with power-ups, characters, and a nice pixel art vibe built in react native."
+                    image={Snake}
+                    githubLink="https://github.com/Joshieingold/Rojers-The-Snake-Method"
+                    />
             </div>
         </section>
     );

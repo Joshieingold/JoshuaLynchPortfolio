@@ -1,5 +1,5 @@
 ﻿import React, { useEffect, useState } from "react";
-import { preLoaderAnim } from "./Animations.jsx"; 
+import { preLoaderAnim } from "./Animations.jsx";
 import "./loader.css";
 
 const Loader = () => {
@@ -14,9 +14,9 @@ const Loader = () => {
     return (
         <div className="preloader">
             <div className="texts-container">
-                <span>Learn.</span>
-                <span>Code.</span>
-                <span>Create.</span>
+                <span>Learn</span>
+                <span>Code</span>
+                <span>Create</span>
             </div>
         </div>
     );
