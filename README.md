@@ -1,7 +1,7 @@
 <h1> Welcome to my portfolio</h1>
 <p>This is the repository for my personal portfolio project.</p> 
 <p>The website is live and hosted at https://joshualynchportfolio.netlify.app/</p>
-    
+<p>Working on a website overhall soon</p>
 <h2>Features</h2>
 <ul>
   <li>
